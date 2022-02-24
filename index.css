@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    background-color: #fafafa;
+}
+.dino{
+    width: 60px;
+    height: 60px;
+    background-image: url(./Assets/dino.png);
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    
+}
+.catos{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background-image: url(./Assets/cactus.png);
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.game-over{
+    text-align: center;
+    margin: 50px 0;
+    color: #666666;
+    font-family: arial;
+}
+
+@keyframes slideright{
+    from{
+        background-position: 70000%;
+    }
+    to{
+        background-position: 0%;
+    }
+}
+.background{
+    position: absolute;
+    bottom: 0;
+    background-image: url(./Assets/background.png);
+    background-repeat: repeat-x;
+    animation: slideright 1100s infinite linear;
+    -webkit-animation: slideright 1100s infinite linear;
+    width: 100%;
+    height: 200px;
+}
